@@ -58,15 +58,21 @@ The system consists of two modules:
 
 ---
 
+## Transmitter Circuit
+![Transmitter Circuit](Diagrams/Transmitter_circuit.jpeg)
+
+## Receiver Circuit
+![Receiver Circuit](Diagrams/Receiver_circuit.jpeg)
+
 ## Hardware Setup
 
-![Project Setup](Images/setup.png)
+[View Project Setup Image](Images/setup.png)
 
 ---
 
 ## Transmitter Module
 
-![Transmitter](Images/Transmitter.jpg)
+[View Transmitter Image](Images/Transmitter.jpg)
 
 Components:
 - Arduino Uno
@@ -80,7 +86,7 @@ Components:
 
 ## Receiver Module
 
-![Receiver](Images/receiver.png)
+[View Receiver Image](Images/receiver.png)
 
 Components:
 - Arduino Uno
