@@ -127,7 +127,9 @@ LiFiGuard-Vehicle-Safety-System
 6. Alerts are displayed on the **LCD screen**.
 7. The **buzzer activates** for critical warnings.
 
+
 ---
+
 
 ## Demonstration
 
