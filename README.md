@@ -1,5 +1,3 @@
-![LiFiGuard Banner](Diagrams/System_architecture.png)
-
 # LiFiGuard – Vehicle Communication and Safety System
 
 ![Arduino](https://img.shields.io/badge/Arduino-Uno-blue)
