@@ -1,73 +1,144 @@
+![LiFiGuard Banner](Diagrams/System_architecture.png)
+
 # LiFiGuard – Vehicle Communication and Safety System
 
+![Arduino](https://img.shields.io/badge/Arduino-Uno-blue)
+![Communication](https://img.shields.io/badge/Communication-LiFi-green)
+![Language](https://img.shields.io/badge/Language-Arduino%20C-orange)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+
 ## Overview
-LiFiGuard is a vehicle-to-vehicle communication system that uses LiFi (Light Fidelity) technology to transmit real-time safety alerts between vehicles. 
-The system detects dangerous conditions such as collision, alcohol presence, and obstacles, and sends alerts to nearby vehicles using LED-based LiFi communication.
+LiFiGuard is a vehicle-to-vehicle communication system that uses **LiFi (Light Fidelity)** technology to transmit real-time safety alerts between vehicles.
+
+The system detects dangerous conditions such as **obstacles, collisions, and alcohol presence**, and communicates warnings to nearby vehicles using **LED-based LiFi communication**.
+
+This project demonstrates how **visible light communication** can improve road safety using **embedded systems and Arduino**.
+
+---
 
 ## Key Features
-- Obstacle detection using ultrasonic sensor
-- Collision detection using vibration sensor
-- Alcohol detection using MQ-3 gas sensor
-- Real-time vehicle-to-vehicle alert communication using LiFi
-- LCD display and buzzer alerts for warning notifications
+
+- Obstacle detection using **Ultrasonic Sensor**
+- Collision detection using **Vibration Sensor**
+- Alcohol detection using **MQ-3 Gas Sensor**
+- Real-time **vehicle-to-vehicle alert communication**
+- **LCD display** for driver alerts
+- **Buzzer notifications** for critical warnings
+
+---
 
 ## Technologies Used
+
 - Arduino Uno
 - LiFi Communication
 - Embedded C / Arduino Programming
-- Sensors (MQ-3, SW-420, HC-SR04)
-- LCD Display
-- Solar Panel Receiver
+- Ultrasonic Sensor (HC-SR04)
+- MQ-3 Gas Sensor
+- Vibration Sensor
+- LCD Display (16x2 I2C)
+- Solar Panel LiFi Receiver
+- LEDs for LiFi Transmission
+
+---
 
 ## System Architecture
-![System Architecture](Diagrams/system_architecture.png)
+
+![System Architecture](Diagrams/System_architecture.png)
+
+The system consists of two modules:
+
+**Transmitter Vehicle**
+- Detects hazards using sensors
+- Sends encoded alert messages using LiFi LED
+
+**Receiver Vehicle**
+- Receives LiFi signal using solar panel
+- Decodes the message
+- Displays alerts on LCD and activates buzzer
+
+---
 
 ## Hardware Setup
-![Project Setup](Images/setup.jpg)
+
+![Project Setup](Images/setup.png)
+
+---
 
 ## Transmitter Module
-![Transmitter](Images/transmitter.jpg)
+
+![Transmitter](Images/Transmitter.jpg)
+
+Components:
+- Arduino Uno
+- Ultrasonic Sensor
+- MQ-3 Gas Sensor
+- Vibration Sensor
+- Control Buttons
+- LED (LiFi transmitter)
+
+---
 
 ## Receiver Module
-![Receiver](Images/receiver.jpg)
+
+![Receiver](Images/receiver.png)
+
+Components:
+- Arduino Uno
+- Solar Panel (LiFi receiver)
+- 16x2 LCD Display
+- Buzzer
+
+---
 
 ## Project Structure
 
 LiFiGuard-Vehicle-Safety-System
 │
 ├── README.md
-├── Project_Report.pdf
-├── LiFiGuard_Presentation.pptx
+├── LIFIGUARD_report.pdf
+├── LIFIGUARD_presentation.pdf
 │
 ├── Code
 │   ├── transmitter_code.ino
 │   └── receiver_code.ino
 │
 ├── Images
-│   ├── setup.jpg
-│   ├── transmitter.jpg
-│   └── receiver.jpg
+│   ├── setup.png
+│   ├── Transmitter.jpg
+│   └── receiver.png
 │
 ├── Diagrams
-│   ├── system_architecture.png
-│   ├── transmitter_circuit.png
-│   └── receiver_circuit.png
+│   ├── System_architecture.png
+│   ├── Transmitter_circuit.jpeg
+│   └── Receiver_circuit.jpeg
 │
 └── Videos
     └── demo.mp4
 
+---
+
 ## How the System Works
-1. Sensors detect conditions such as obstacles, vibration (collision), or alcohol presence.
+
+1. Sensors detect conditions such as **obstacles, collision, or alcohol presence**.
 2. Arduino processes the sensor data.
-3. Data is encoded and transmitted using LiFi LED light.
+3. Data is encoded and transmitted using **LiFi LED light**.
 4. The receiver solar panel detects the light signal.
 5. The receiver Arduino decodes the signal.
-6. Alerts are displayed on the LCD and buzzer is activated if needed.
+6. Alerts are displayed on the **LCD screen**.
+7. The **buzzer activates** for critical warnings.
+
+---
 
 ## Demonstration
-The working demonstration video is available in the **Videos** folder.
+
+Watch the working demo:
+
+[Open Demo Video](Videos/demo.mp4)
+
+---
 
 ## Contributors
+
 - Karthikeya
 - Ram Charan
 - Shravani
